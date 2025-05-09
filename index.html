@@ -53,28 +53,37 @@
     .btn:hover { 
       background-color: #005bb5;
     }
-    .product-grid {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 40px;
+    .usp, .faq, .products { 
+      padding: 40px 20px; 
+      max-width: 1200px; 
+      margin: auto; 
     }
-    .product-card {
-      background-color: #f2f2f2;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      width: 280px;
-      transition: transform 0.3s ease;
+    .usp h2, .products h2, .faq h2 { 
+      text-align: center; 
+      color: white; 
+    }
+    .usp-list, .product-grid { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      gap: 20px; 
+    }
+    .usp-item, .product-card { 
+      flex: 1 1 300px; 
+      background: rgba(255, 255, 255, 0.8); 
+      padding: 20px; 
+      border-radius: 8px; 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card img { 
+      width: 100%; 
+      height: 200px; 
+      object-fit: cover;
+      border-radius: 5px; 
     }
     .product-card:hover {
       transform: scale(1.02);
-    }
-    .product-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 5px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     }
     .scroll-top {
       position: fixed;
@@ -107,13 +116,8 @@
   </nav>
 </header>
 
-<section id="waarom" class="usp">
-  <h2>Waarom een SSD voor je PS5?</h2>
-  <p>Een SSD (Solid State Drive) is essentieel voor een optimale game-ervaring op je PlayStation 5. Met een SSD laad je games vele malen sneller dan met een traditionele harde schijf. Bovendien ondersteunt een SSD de nieuwe technologieën van de PS5, waardoor je games soepeler draaien en sneller laden. Onze SSD's zijn specifiek geselecteerd om volledig compatibel te zijn met de PS5, inclusief heatsinks voor optimale koeling.</p>
-</section>
-
-<section id="producten">
-  <h2 style="text-align: center; color: white;">Uitgelichte Producten</h2>
+<section id="producten" class="products">
+  <h2>Uitgelichte Producten</h2>
   <div class="product-grid">
     <div class="product-card">
       <img src="https://trystantryingstan.github.io/ssdvoorps5/ssd1.jpg" alt="Samsung 980 Pro 1TB">
@@ -135,19 +139,6 @@
     </div>
   </div>
 </section>
-
-<div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</div>
-
-<script>
-  window.addEventListener('scroll', function() {
-    const scrollButton = document.querySelector('.scroll-top');
-    if (window.scrollY > 300) {
-      scrollButton.style.display = 'block';
-    } else {
-      scrollButton.style.display = 'none';
-    }
-  });
-</script>
 
 </body>
 </html>
