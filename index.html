@@ -90,7 +90,23 @@
     html {
       scroll-behavior: smooth;
     }
-  </style>
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0070f3;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+    .scroll-top:hover {
+      background-color: #005bb5;
+    }
+</style>
 </head>
 <body>
 
@@ -165,3 +181,19 @@
     <p>Voor 16:00 besteld = morgen in huis (NL & BE).</p>
   </div>
 </section>
+
+<div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">⬆️</div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const scrollButton = document.querySelector('.scroll-top');
+    if (window.scrollY > 300) {
+      scrollButton.style.display = 'block';
+    } else {
+      scrollButton.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
