@@ -5,44 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SSD voor PS5</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-image: url('https://trystantryingstan.github.io/ssdvoorps5/background.jpg.png'), linear-gradient(to bottom, #1a1a1a, #333);
-      background-size: cover;
-      background-position: center;
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background-image: url('https://trystantryingstan.github.io/ssdvoorps5/background.jpg.png'), linear-gradient(to bottom, #1a1a1a, #333); 
+      background-size: cover; 
+      background-position: center; 
     }
-    header nav a:hover {
-      color: #0070f3;
+    header, footer { 
+      background-color: rgba(26, 26, 26, 0.8); 
+      color: white; 
+      padding: 20px; 
+      text-align: center; 
     }
-    .btn:hover {
-      background-color: #005bb5;
-      transition: background-color 0.3s ease;
-    }
-    .product-card:hover {
-      transform: scale(1.02);
-      transition: transform 0.3s ease;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    }
-    .product-card img {
-      transition: transform 0.3s ease;
-    }
-    .product-card:hover img {
-      transform: scale(1.05);
-    }
-    .btn {
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #003e73;
-      color: white;
-    }
-    nav a {
-      transition: color 0.3s ease;
+    nav a { 
+      margin: 0 15px; 
+      color: white; 
+      text-decoration: none; 
     }
     nav a:hover {
       color: #1e90ff;
+    }
+    .hero { 
+      background-color: rgba(0, 0, 0, 0.5); 
+      color: white; 
+      padding: 50px 20px; 
+      text-align: center; 
+    }
+    .hero h1 { 
+      font-size: 2.5em; 
+      margin-bottom: 10px; 
+    }
+    .hero p { 
+      font-size: 1.2em; 
+    }
+    .btn { 
+      background-color: #0070f3; 
+      color: white; 
+      padding: 15px 25px; 
+      text-decoration: none; 
+      display: inline-block; 
+      margin-top: 20px; 
+      border-radius: 5px; 
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover { 
+      background-color: #005bb5;
+    }
+    .usp, .faq, .products { 
+      padding: 40px 20px; 
+      max-width: 1200px; 
+      margin: auto; 
+    }
+    .usp h2, .products h2, .faq h2 { 
+      text-align: center; 
+      color: white; 
+    }
+    .usp-list, .product-grid { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      gap: 20px; 
+    }
+    .usp-item, .product-card { 
+      flex: 1 1 250px; 
+      background: rgba(255, 255, 255, 0.8); 
+      padding: 20px; 
+      border-radius: 8px; 
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .product-card img { 
+      width: 100%; 
+      height: auto; 
+      border-radius: 5px; 
+    }
+    .faq-item { 
+      margin-bottom: 20px; 
+    }
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -98,31 +144,3 @@
     </div>
   </div>
 </section>
-
-<section id="waarom" class="usp">
-  <h2>Waarom een SSD voor je PS5?</h2>
-  <p>Met een extra SSD breid je eenvoudig je opslagcapaciteit uit. Speel meer games zonder te verwijderen en ervaar razendsnelle laadtijden. Al onze SSD’s zijn voorzien van heatsink en voldoen aan de eisen van Sony.</p>
-</section>
-
-<section id="faq" class="faq">
-  <h2>Veelgestelde vragen</h2>
-  <div class="faq-item">
-    <strong>Hoe installeer ik een SSD in mijn PS5?</strong>
-    <p>Volg onze stap-voor-stap handleiding of bekijk de installatievideo in de productpagina.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Is elke SSD geschikt?</strong>
-    <p>Nee, je hebt een SSD nodig met minimale snelheid én heatsink. Onze producten zijn allemaal geschikt voor PS5.</p>
-  </div>
-  <div class="faq-item">
-    <strong>Hoe snel is de levering?</strong>
-    <p>Voor 16:00 besteld = morgen in huis (NL & BE).</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 SSDvoorPS5.nl | Contact | Algemene voorwaarden | Verzending & Retour</p>
-</footer>
-
-</body>
-</html>
